@@ -1,14 +1,22 @@
-
-def plus():
+def plus(a, b):
     return a + b
-def minus():
+
+
+def minus(a, b):
     return a - b
-def delen():
+
+
+def delen(a, b):
     return a / b
-def prois():
+
+
+def prois(a, b):
     return a * b
-def ctep():
+
+
+def ctep(a, b):
     return a ^ b
+
 
 while True:
     print('Введите 2 числа: ')
@@ -16,15 +24,15 @@ while True:
     b = int(input())
     c = input('+, -, /, *, ^')
     if c == '+':
-        print('Результат:', plus())
+        print('Результат:', plus(a, b))
     elif c == '-':
-        print('результат: ', minus())
+        print('результат: ', minus(a, b))
     elif c == '*':
-        print('результат: ', prois())
+        print('результат: ', prois(a, b))
     elif c == '^':
-        print('результат: ', ctep())
+        print('результат: ', ctep(a, b))
     elif c == '/' and b != 0:
-            print('результат: ', delen())
+        print('результат: ', delen(a, b))
     else:
-       print('деление на 0 нельзя')
-       break
+        print('деление на 0 нельзя')
+        break
