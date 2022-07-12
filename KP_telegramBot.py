@@ -3,7 +3,7 @@ import random
 from telebot import types
 
 # Создаем и загружаем список скороговорок
-f = open('../pythonProject/занятия Git/ckorog.txt', 'r', encoding='UTF-8')
+f = open('ckorog.txt', 'r', encoding='UTF-8')
 ckorogs = f.read().split('\n')
 f.close()
 # Создаем и загружаем список поговорок
